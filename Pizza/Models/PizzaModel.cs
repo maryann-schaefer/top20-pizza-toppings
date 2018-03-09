@@ -14,7 +14,12 @@ namespace Pizza.Models
     public PizzaModel() { }
 
     public PizzaModel(string[] toppings) {
-      //Sort toppings first (assuming the order of toppings in the file does not matter when counting combinations).
+      //Data assumptions:
+      //  - order of toppings does not matter (cheese,pepperoni is the same as pepperoni,cheese)
+      //  - data is all lower case
+      //  - don't ignore duplicate toppings as it could mean extra (cheese,pepperoni is not the same as cheese,pepperoni,pepperoni)
+
+      //Sort toppings first to ensure order in raw data is consistent.
       Array.Sort(toppings);
 
       //Join array elements into a string.
