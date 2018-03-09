@@ -1,5 +1,5 @@
 # top20-pizza-toppings
-List of top 20 most ordered pizza toppings
+Pizza exercise for Olo - List of top 20 most ordered pizza toppings from json data source.
 
-ASP.NET MVC project with single page to display the top 20 pizza topping combinations from a json file.
+ASP.NET Core MVC project
 
